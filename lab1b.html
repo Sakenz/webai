@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Elements</title>
+</head>
+<body>
+<h1>Email Registration</h1>
+
+<form id="email_form" onsubmit="display_data_1b(event)" style="font-size: 200%">
+    <label for="display_name">Display Name:</label>
+    <input type="text" id="display_name" name="display_name" required>
+    <br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <label>Gender: </label>
+    <input type="radio" id="male" name="gender">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender">
+    <label for="female">Female</label>
+    <br>
+    <label for="dob">DOB:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<div id="result"></div>
+
+<script src="display_data.js"></script>
+</body>
+</html>
