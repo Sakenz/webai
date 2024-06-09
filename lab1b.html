@@ -7,7 +7,7 @@
 <body>
 <h1>Email Registration</h1>
 
-<form id="email_form" onsubmit="display_data_1b(event)" style="font-size: 200%">
+<form id="email_form" onsubmit="display_data_1b(event)" style="font-size: 150%">
     <label for="display_name">Display Name:</label>
     <input type="text" id="display_name" name="display_name" required>
     <br>
@@ -25,6 +25,21 @@
     <br>
     <label for="dob">DOB:</label>
     <input type="date" id="dob" name="dob" required>
+    <br>
+    <label for="occupation">Occupation:</label>
+    <select name="occupation" id="occupation">
+        <option value="professor">Professor</option>
+        <option value="researcher">Researcher</option>
+        <option value="student">Student</option>
+    </select>
+    <br>
+    <label>Subjects:</label><br>
+    <input type="checkbox" id="subject1" name="subject1" value="maths">
+    <label for="subject1">Maths</label><br>
+    <input type="checkbox" id="subject2" name="subject2" value="science">
+    <label for="subject2">Science</label><br>
+    <input type="checkbox" id="subject3" name="subject3" value="computer Science">
+    <label for="subject3">Computer Science</label>
     <br>
     <input type="submit" value="Submit">
 </form>
